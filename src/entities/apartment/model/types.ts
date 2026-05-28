@@ -6,6 +6,7 @@ export interface Right {
   ownershipType?: string | null;
   rightTypeDesc?: string;
   sharedOwnershipType?: boolean;
+  fio?: string;
 }
 
 export interface Encumbrance {
@@ -58,5 +59,6 @@ export interface ApartmentElement {
   oldNumbers?: Array<{ numType: string; numValue: string }>;
   cadCost?: string;
   levelFloor?: string;
+  purpose?: string;
   mainCharacters?: MainCharacter[];
 }

@@ -46,7 +46,8 @@
         "part": "15/49",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Еникеева Ильмира Рашидовна"
       },
       {
         "rightType": "001002000000",
@@ -55,7 +56,8 @@
         "part": "19/49",
         "ownershipType": "03",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Санкт-Петербург"
       },
       {
         "rightType": "001002000000",
@@ -64,7 +66,8 @@
         "part": "15/49",
         "ownershipType": "03",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Санкт-Петербург"
       }
     ],
     "encumbrances": [
@@ -173,7 +176,8 @@
         "part": "3/8",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Шарутина Наталия Ивановна"
       },
       {
         "rightType": "001002000000",
@@ -182,7 +186,8 @@
         "part": "5/8",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -274,7 +279,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Цветкова Тамара Федоровна"
       }
     ],
     "encumbrances": [],
@@ -366,7 +372,8 @@
         "part": "14/34",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Богданов Виктор Вячеславович"
       },
       {
         "rightType": "001002000000",
@@ -375,7 +382,8 @@
         "part": "17/68",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -384,7 +392,8 @@
         "part": "6/68",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -393,7 +402,8 @@
         "part": "17/68",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [
@@ -494,7 +504,8 @@
         "part": "19/49",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Молчанов Михаил Александрович"
       },
       {
         "rightType": "001002000000",
@@ -503,7 +514,8 @@
         "part": "30/49",
         "ownershipType": "03",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Санкт-Петербург"
       }
     ],
     "encumbrances": [],
@@ -595,7 +607,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Общая совместная собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Семина Наталья Иосифовна, Семин Вадим Иванович, Семина Яна Вадимовна"
       }
     ],
     "encumbrances": [],
@@ -687,7 +700,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Бронникова Валерия Сергеевна"
       }
     ],
     "encumbrances": [],
@@ -779,7 +793,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -788,7 +803,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -797,7 +813,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -806,7 +823,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -898,7 +916,8 @@
         "part": "1/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Берхман Юрий Владимирович"
       },
       {
         "rightType": "001002000000",
@@ -907,7 +926,8 @@
         "part": "2/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Берхман Юрий Владимирович"
       }
     ],
     "encumbrances": [
@@ -1008,7 +1028,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Жукова Лариса Петровна"
       }
     ],
     "encumbrances": [],
@@ -1100,7 +1121,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Кондрашов Михаил Юрьевич"
       },
       {
         "rightType": "001002000000",
@@ -1109,7 +1131,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Кондрашова Ксения Михайловна"
       }
     ],
     "encumbrances": [
@@ -1210,7 +1233,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -1302,7 +1326,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Киселева Алла Николаевна, Киселева Ирина Владимировна, Вагер Владислав Игоревич"
       },
       {
         "rightType": "001002000000",
@@ -1311,7 +1336,8 @@
         "part": "1/4",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Киселева Алла Николаевна"
       },
       {
         "rightType": "001002000000",
@@ -1320,7 +1346,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Киселева Алла Николаевна, Киселева Ирина Владимировна, Вагер Владислав Игоревич"
       },
       {
         "rightType": "001002000000",
@@ -1329,7 +1356,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Киселева Алла Николаевна, Киселева Ирина Владимировна, Вагер Владислав Игоревич"
       }
     ],
     "encumbrances": [],
@@ -1421,7 +1449,8 @@
         "part": "20/35",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Елисеева Татьяна Владимировна"
       },
       {
         "rightType": "001002000000",
@@ -1430,7 +1459,8 @@
         "part": "8/35",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Васильева Светлана Викторовна, Васильева Екатерина Александровна"
       },
       {
         "rightType": "001002000000",
@@ -1439,7 +1469,8 @@
         "part": "7/35",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Васильева Светлана Викторовна, Васильева Екатерина Александровна"
       }
     ],
     "encumbrances": [
@@ -1540,7 +1571,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Февралев Николай Андреевич, Февралева Ольга Владимировна"
       },
       {
         "rightType": "001002000000",
@@ -1549,7 +1581,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Февралев Николай Андреевич, Февралева Ольга Владимировна"
       }
     ],
     "encumbrances": [],
@@ -1641,7 +1674,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -1650,7 +1684,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -1742,7 +1777,8 @@
         "part": "15/49",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Кулёва Марина Михайловна"
       },
       {
         "rightType": "001002000000",
@@ -1751,7 +1787,8 @@
         "part": "19/49",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Кулёва Марина Михайловна"
       },
       {
         "rightType": "001002000000",
@@ -1760,7 +1797,8 @@
         "part": "15/49",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [
@@ -1861,7 +1899,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Остапова Юлия Александровна"
       }
     ],
     "encumbrances": [],
@@ -1953,7 +1992,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Горбунова Галина Алексеевна"
       }
     ],
     "encumbrances": [],
@@ -2045,7 +2085,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Мильковская Русана Михайловна"
       }
     ],
     "encumbrances": [],
@@ -2137,7 +2178,8 @@
         "part": "2/3",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Семенова Ольга Николаевна"
       },
       {
         "rightType": "001002000000",
@@ -2146,7 +2188,8 @@
         "part": "1/12",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Семенова Ольга Николаевна"
       },
       {
         "rightType": "001002000000",
@@ -2155,7 +2198,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Семенова Ольга Николаевна"
       }
     ],
     "encumbrances": [],
@@ -2247,7 +2291,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Трусов Юрий Анатольевич"
       }
     ],
     "encumbrances": [],
@@ -2339,7 +2384,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Опалько Елена Николаевна"
       }
     ],
     "encumbrances": [
@@ -2440,7 +2486,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -2532,7 +2579,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Орлова Елизавета Станиславовна"
       }
     ],
     "encumbrances": [],
@@ -2624,7 +2672,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -2716,7 +2765,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Волкова Александра Юрьевна"
       },
       {
         "rightType": "001002000000",
@@ -2725,7 +2775,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -2817,7 +2868,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Васильев Сергей Владимирович"
       }
     ],
     "encumbrances": [],
@@ -2909,7 +2961,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -3001,7 +3054,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Крупко Светлана Александровна"
       }
     ],
     "encumbrances": [],
@@ -3093,7 +3147,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Забровский Александр Павлович"
       }
     ],
     "encumbrances": [],
@@ -3185,7 +3240,8 @@
         "part": "1/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Шилова Людмила Ивановна, Шилов Сергей Иванович, Шилова Елизавета Сергеевна"
       },
       {
         "rightType": "001002000000",
@@ -3194,7 +3250,8 @@
         "part": "1/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Шилова Людмила Ивановна, Шилов Сергей Иванович, Шилова Елизавета Сергеевна"
       },
       {
         "rightType": "001002000000",
@@ -3203,7 +3260,8 @@
         "part": "1/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Шилова Людмила Ивановна, Шилов Сергей Иванович, Шилова Елизавета Сергеевна"
       }
     ],
     "encumbrances": [],
@@ -3295,7 +3353,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [
@@ -3396,7 +3455,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -3488,7 +3548,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -3497,7 +3558,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -3589,7 +3651,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Кушин Юрий Владимирович"
       },
       {
         "rightType": "001002000000",
@@ -3598,7 +3661,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Кушин Владимир Михайлович"
       },
       {
         "rightType": "001002000000",
@@ -3607,7 +3671,8 @@
         "part": "1/4",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Кушин Юрий Владимирович"
       },
       {
         "rightType": "001002000000",
@@ -3616,7 +3681,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Кушин Юрий Владимирович"
       }
     ],
     "encumbrances": [],
@@ -3708,7 +3774,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -3717,7 +3784,8 @@
         "part": "1/4",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -3726,7 +3794,8 @@
         "part": "1/8",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -3735,7 +3804,8 @@
         "part": "1/8",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -3823,7 +3893,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Иванова Ирина Николаевна"
       },
       {
         "rightType": "001002000000",
@@ -3832,7 +3903,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Иванов Владимир Анатольевич"
       }
     ],
     "encumbrances": [],
@@ -3924,7 +3996,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [
@@ -4025,7 +4098,8 @@
         "part": "15/50",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Кузнецова Наталия Ивановна"
       },
       {
         "rightType": "001002000000",
@@ -4034,7 +4108,8 @@
         "part": "15/50",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -4043,7 +4118,8 @@
         "part": "20/50",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Михайлов Олег Владимирович, Михайлова Ксения Николаевна"
       }
     ],
     "encumbrances": [
@@ -4145,7 +4221,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Сантнанеев Сергей Владимирович"
       }
     ],
     "encumbrances": [],
@@ -4237,7 +4314,8 @@
         "part": "20/35",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Омельченко Татьяна Валентиновна"
       },
       {
         "rightType": "001002000000",
@@ -4246,7 +4324,8 @@
         "part": "5/35",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -4255,7 +4334,8 @@
         "part": "5/35",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -4264,7 +4344,8 @@
         "part": "5/35",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -4356,7 +4437,8 @@
         "part": "17/49",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Воронина Ольга Валентиновна"
       },
       {
         "rightType": "001002000000",
@@ -4365,7 +4447,8 @@
         "part": "17/49",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Воронина Ольга Валентиновна"
       },
       {
         "rightType": "001002000000",
@@ -4374,7 +4457,8 @@
         "part": "15/49",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Горбацкий Сергей Иванович"
       }
     ],
     "encumbrances": [
@@ -4483,7 +4567,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [
@@ -4584,7 +4669,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Арсеньева Валентина Ивановна"
       }
     ],
     "encumbrances": [],
@@ -4676,7 +4762,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Общая совместная собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [
@@ -4777,7 +4864,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Зарецкая Ольга Игоревна"
       }
     ],
     "encumbrances": [
@@ -4878,7 +4966,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Боровлева Марина Владиславовна"
       },
       {
         "rightType": "001002000000",
@@ -4887,7 +4976,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Сотова Ольга Валерьевна"
       },
       {
         "rightType": "001002000000",
@@ -4896,7 +4986,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Боровлева Марина Владиславовна"
       },
       {
         "rightType": "001002000000",
@@ -4905,7 +4996,8 @@
         "part": "1/4",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Боровлев Александр Валерьевич"
       }
     ],
     "encumbrances": [],
@@ -4997,7 +5089,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Сенина Ирина Александровна"
       }
     ],
     "encumbrances": [],
@@ -5089,7 +5182,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Калинина Марина Сергеевна"
       },
       {
         "rightType": "001002000000",
@@ -5098,7 +5192,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [
@@ -5207,7 +5302,8 @@
         "part": "19/98",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Кузнецова Наталия Викторовна"
       },
       {
         "rightType": "001002000000",
@@ -5216,7 +5312,8 @@
         "part": "15/49",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Рябов Александр Васильевич"
       },
       {
         "rightType": "001002000000",
@@ -5225,7 +5322,8 @@
         "part": "19/98",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Рябов Василий Владимирович"
       },
       {
         "rightType": "001002000000",
@@ -5234,7 +5332,8 @@
         "part": "15/49",
         "ownershipType": "03",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Санкт-Петербург"
       }
     ],
     "encumbrances": [],
@@ -5326,7 +5425,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -5335,7 +5435,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -5427,7 +5528,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -5436,7 +5538,8 @@
         "part": "1/4",
         "ownershipType": "05",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Петрова Елизавета Дмитриевна"
       },
       {
         "rightType": "001002000000",
@@ -5445,7 +5548,8 @@
         "part": "1/4",
         "ownershipType": "05",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Петрова Юлия Геннадьевна"
       }
     ],
     "encumbrances": [],
@@ -5537,7 +5641,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -5629,7 +5734,8 @@
         "part": "1/5",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -5638,7 +5744,8 @@
         "part": "1/5",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -5647,7 +5754,8 @@
         "part": "1/5",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -5656,7 +5764,8 @@
         "part": "2/5",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -5748,7 +5857,8 @@
         "part": "1/5",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Терещенко Владимир Михайлович, Терещенко Василий Владимирович, Терещенко Данила Владимирович"
       },
       {
         "rightType": "001002000000",
@@ -5757,7 +5867,8 @@
         "part": "1/5",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Терещенко Владимир Михайлович, Терещенко Василий Владимирович, Терещенко Данила Владимирович"
       },
       {
         "rightType": "001002000000",
@@ -5766,7 +5877,8 @@
         "part": "1/10",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -5775,7 +5887,8 @@
         "part": "1/10",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -5784,7 +5897,8 @@
         "part": "3/10",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -5793,7 +5907,8 @@
         "part": "1/10",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -5885,7 +6000,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Колзановская Светлана Геннадьевна"
       }
     ],
     "encumbrances": [],
@@ -5977,7 +6093,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Блохин Виталий Васильевич"
       },
       {
         "rightType": "001002000000",
@@ -5986,7 +6103,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Блохина Любовь Витальевна"
       }
     ],
     "encumbrances": [],
@@ -6078,7 +6196,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Протасова Марина Александровна"
       }
     ],
     "encumbrances": [],
@@ -6170,7 +6289,8 @@
         "part": "1/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Ковальчук Илья Александрович"
       },
       {
         "rightType": "001002000000",
@@ -6179,7 +6299,8 @@
         "part": "1/6",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Ковальчук Илья Александрович"
       },
       {
         "rightType": "001002000000",
@@ -6188,7 +6309,8 @@
         "part": "1/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Ковальчук Лилия Петровна"
       },
       {
         "rightType": "001002000000",
@@ -6197,7 +6319,8 @@
         "part": "1/6",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Ковальчук Илья Александрович"
       }
     ],
     "encumbrances": [
@@ -6298,7 +6421,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Лосич Ольга Юрьевна"
       },
       {
         "rightType": "001002000000",
@@ -6307,7 +6431,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -6399,7 +6524,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -6491,7 +6617,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Аверичева Анна Николаевна"
       }
     ],
     "encumbrances": [
@@ -6608,7 +6735,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Куприянова Арина Сергеевна, Матяж Юлия Валентиновна"
       },
       {
         "rightType": "001002000000",
@@ -6617,7 +6745,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Куприянова Арина Сергеевна, Матяж Юлия Валентиновна"
       }
     ],
     "encumbrances": [
@@ -6718,7 +6847,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Китаева Елена Александровна"
       },
       {
         "rightType": "001002000000",
@@ -6727,7 +6857,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Китаев Андрей Владимирович"
       }
     ],
     "encumbrances": [],
@@ -6819,7 +6950,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Владимирова Евгения Юрьевна"
       },
       {
         "rightType": "001002000000",
@@ -6828,7 +6960,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Пудовкин Денис Юрьевич"
       }
     ],
     "encumbrances": [],
@@ -6920,7 +7053,8 @@
         "part": "1/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Смирнова Алия Сафавна, Смирнова Анна Сергеевна"
       },
       {
         "rightType": "001002000000",
@@ -6929,7 +7063,8 @@
         "part": "1/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Смирнова Алия Сафавна, Смирнова Анна Сергеевна"
       },
       {
         "rightType": "001002000000",
@@ -6938,7 +7073,8 @@
         "part": "1/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Смирнова Алия Сафавна"
       }
     ],
     "encumbrances": [],
@@ -7030,7 +7166,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Нестерова Надежда Парфентьевна"
       },
       {
         "rightType": "001002000000",
@@ -7039,7 +7176,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Нестерова Надежда Парфентьевна"
       }
     ],
     "encumbrances": [
@@ -7140,7 +7278,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -7232,7 +7371,8 @@
         "part": "1/2",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Демидова Людмила Александровна, Демидов Алексей Алексеевич"
       },
       {
         "rightType": "001002000000",
@@ -7241,7 +7381,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -7333,7 +7474,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       },
       {
         "rightType": "001002000000",
@@ -7342,7 +7484,8 @@
         "part": "1/2",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [],
@@ -7434,7 +7577,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [
@@ -7535,7 +7679,8 @@
         "part": "2/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Юдина Варвара Дмитриевна, Юдина Анастасия Олеговна"
       },
       {
         "rightType": "001002000000",
@@ -7544,7 +7689,8 @@
         "part": "1/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Юдина Варвара Дмитриевна, Юдина Анастасия Олеговна"
       }
     ],
     "encumbrances": [],
@@ -7636,7 +7782,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Морозова Валентина Николаевна"
       }
     ],
     "encumbrances": [],
@@ -7728,7 +7875,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Новиков Константин Александрович"
       }
     ],
     "encumbrances": [],
@@ -7820,7 +7968,8 @@
         "part": null,
         "ownershipType": "01",
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "ФИО неизвестны"
       }
     ],
     "encumbrances": [
@@ -7921,7 +8070,8 @@
         "part": null,
         "ownershipType": null,
         "rightTypeDesc": "Собственность",
-        "sharedOwnershipType": false
+        "sharedOwnershipType": false,
+        "fio": "Палий Елена Валерьевна"
       }
     ],
     "encumbrances": [],
@@ -8013,7 +8163,8 @@
         "part": "2/3",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Мальченкова Наталия Дмитриевна"
       },
       {
         "rightType": "001002000000",
@@ -8022,7 +8173,8 @@
         "part": "1/3",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Мальченкова Надежда Васильевна, Мальченков Юрий Леонидович, Мальченкова Наталия Дмитриевна"
       }
     ],
     "encumbrances": [],
@@ -8114,7 +8266,8 @@
         "part": "7/48",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Певцов Сергей Александрович"
       },
       {
         "rightType": "001002000000",
@@ -8123,7 +8276,8 @@
         "part": "33/48",
         "ownershipType": null,
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Бахвалова Наталья Васильевна"
       },
       {
         "rightType": "001002000000",
@@ -8132,7 +8286,8 @@
         "part": "8/48",
         "ownershipType": "01",
         "rightTypeDesc": "Общая долевая собственность",
-        "sharedOwnershipType": true
+        "sharedOwnershipType": true,
+        "fio": "Певцов Сергей Александрович"
       }
     ],
     "encumbrances": [],

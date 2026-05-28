@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Store, User, Users, AlertCircle, ShoppingBag } from 'lucide-react';
 import type { ApartmentElement } from '../../entities/apartment/model/types';
 import { Badge } from '../../shared/ui/Badge';
@@ -11,6 +12,7 @@ interface ApartmentTableProps {
 
 export const ApartmentTable: React.FC<ApartmentTableProps> = ({ apartments, isLoading }) => {
   const [currentPage, setCurrentPage] = useState(1);
+  const navigate = useNavigate();
   const itemsPerPage = 15;
 
   if (isLoading) {
@@ -72,7 +74,8 @@ export const ApartmentTable: React.FC<ApartmentTableProps> = ({ apartments, isLo
                   return (
                     <tr
                       key="flat-41"
-                      className="bg-red-500/5 hover:bg-red-500/10 transition-colors duration-200 border-l-4 border-red-500/50"
+                      className="bg-red-500/5 hover:bg-red-500/10 transition-colors duration-200 border-l-4 border-red-500/50 cursor-pointer"
+                      onClick={() => navigate('/apartment/41')}
                     >
                       <td className="py-5 px-6 text-center font-bold text-red-400 font-display">
                         41
@@ -124,7 +127,8 @@ export const ApartmentTable: React.FC<ApartmentTableProps> = ({ apartments, isLo
                 return (
                   <tr
                     key={item.id || flatNum}
-                    className="hover:bg-slate-900/30 transition-colors duration-150 text-slate-300 group"
+                    className="hover:bg-slate-900/30 transition-colors duration-150 text-slate-300 group cursor-pointer"
+                    onClick={() => navigate(`/apartment/${flatNum}`)}
                   >
                     <td className="py-4.5 px-6 text-center font-bold text-slate-400 group-hover:text-indigo-400 transition-colors font-display">
                       {flatNum}
