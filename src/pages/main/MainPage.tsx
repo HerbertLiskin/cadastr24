@@ -12,7 +12,7 @@ export const MainPage: React.FC = () => {
   // Search & Filter States
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedStatus, setSelectedStatus] = useState<'all' | 'residential' | 'commercial'>('all');
-  const [selectedOwnerType, setSelectedOwnerType] = useState<'all' | 'has_owners' | 'no_owners'>('all');
+  const [selectedOwnerType, setSelectedOwnerType] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'apartment' | 'area_asc' | 'area_desc' | 'owners_asc' | 'owners_desc'>('apartment');
 
   // Enrich data with flatNumber and process filters
@@ -35,9 +35,11 @@ export const MainPage: React.FC = () => {
       const ownersCount = item.rights?.length || 0;
       if (selectedOwnerType === 'has_owners') {
         if (isFlat41 || ownersCount === 0) return false;
-      }
-      if (selectedOwnerType === 'no_owners') {
+      } else if (selectedOwnerType === 'no_owners') {
         if (isFlat41 || ownersCount > 0) return false;
+      } else if (selectedOwnerType !== 'all') {
+        const targetCount = parseInt(selectedOwnerType, 10);
+        if (isFlat41 || ownersCount !== targetCount) return false;
       }
 
       // Search Query
@@ -100,6 +102,13 @@ export const MainPage: React.FC = () => {
 
     return filtered;
   }, [apartments, searchQuery, selectedStatus, selectedOwnerType, sortBy]);
+
+  const ownerCountsOptions = useMemo(() => {
+    const counts = apartments
+      .map(a => a.rights?.length || 0)
+      .filter(c => c > 0);
+    return [...new Set(counts)].sort((a, b) => a - b);
+  }, [apartments]);
 
   return (
     <div className="relative min-h-screen pb-16 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
@@ -168,6 +177,7 @@ export const MainPage: React.FC = () => {
               setSelectedOwnerType={setSelectedOwnerType}
               sortBy={sortBy}
               setSortBy={setSortBy}
+              ownerCountsOptions={ownerCountsOptions}
             />
 
             {/* Main Interactive Table */}

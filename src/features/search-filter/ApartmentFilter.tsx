@@ -1,16 +1,18 @@
 import React from 'react';
 import { Search, SlidersHorizontal, ArrowUpDown, Filter } from 'lucide-react';
 import { GlassCard } from '../../shared/ui/GlassCard';
+import { getOwnersPlural } from '../../shared/lib/formatters';
 
 interface ApartmentFilterProps {
   searchQuery: string;
   setSearchQuery: (q: string) => void;
   selectedStatus: 'all' | 'residential' | 'commercial';
   setSelectedStatus: (s: 'all' | 'residential' | 'commercial') => void;
-  selectedOwnerType: 'all' | 'has_owners' | 'no_owners';
-  setSelectedOwnerType: (t: 'all' | 'has_owners' | 'no_owners') => void;
+  selectedOwnerType: string;
+  setSelectedOwnerType: (t: string) => void;
   sortBy: 'apartment' | 'area_asc' | 'area_desc' | 'owners_asc' | 'owners_desc';
   setSortBy: (b: 'apartment' | 'area_asc' | 'area_desc' | 'owners_asc' | 'owners_desc') => void;
+  ownerCountsOptions?: number[];
 }
 
 export const ApartmentFilter: React.FC<ApartmentFilterProps> = ({
@@ -22,6 +24,7 @@ export const ApartmentFilter: React.FC<ApartmentFilterProps> = ({
   setSelectedOwnerType,
   sortBy,
   setSortBy,
+  ownerCountsOptions = [1, 2, 3, 4, 6],
 }) => {
   return (
     <GlassCard className="py-4 px-6 border-slate-800/80 mb-6 bg-slate-900/30">
@@ -66,12 +69,17 @@ export const ApartmentFilter: React.FC<ApartmentFilterProps> = ({
             <span className="text-xs text-slate-400 font-medium">Собственники:</span>
             <select
               value={selectedOwnerType}
-              onChange={(e) => setSelectedOwnerType(e.target.value as any)}
+              onChange={(e) => setSelectedOwnerType(e.target.value)}
               className="bg-transparent text-xs text-indigo-300 font-semibold focus:outline-none border-none cursor-pointer pr-2"
             >
               <option value="all" className="bg-slate-900 text-slate-200">Любые</option>
               <option value="has_owners" className="bg-slate-900 text-slate-200">Есть собственники</option>
               <option value="no_owners" className="bg-slate-900 text-slate-200">Нет собственников</option>
+              {ownerCountsOptions.map(count => (
+                <option key={count} value={String(count)} className="bg-slate-900 text-slate-200">
+                  {getOwnersPlural(count)}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -98,3 +106,4 @@ export const ApartmentFilter: React.FC<ApartmentFilterProps> = ({
     </GlassCard>
   );
 };
+
