@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Landmark, Sparkles, AlertCircle } from 'lucide-react';
 import { useApartments } from '../../entities/apartment/model/useApartments';
 import { StatsGrid } from '../../widgets/stats-grid/StatsGrid';
+import { OwnersAreaBreakdown } from '../../widgets/stats-grid/OwnersAreaBreakdown';
 import { ApartmentFilter } from '../../features/search-filter/ApartmentFilter';
 import { ApartmentTable } from '../../widgets/apartment-table/ApartmentTable';
 import type { ApartmentElement } from '../../entities/apartment/model/types';
@@ -110,6 +111,28 @@ export const MainPage: React.FC = () => {
     return [...new Set(counts)].sort((a, b) => a - b);
   }, [apartments]);
 
+  const ownersAreaBreakdown = useMemo(() => {
+    const breakdownMap: Record<number, { totalArea: number; count: number }> = {};
+    
+    apartments.forEach((item, index) => {
+      if (index === 40 || !item.cadNumber) return; // Skip empty Flat 41
+      const ownersCount = item.rights?.length || 0;
+      const areaVal = parseFloat(item.area || '0');
+      
+      if (!breakdownMap[ownersCount]) {
+        breakdownMap[ownersCount] = { totalArea: 0, count: 0 };
+      }
+      breakdownMap[ownersCount].totalArea += areaVal;
+      breakdownMap[ownersCount].count += 1;
+    });
+
+    return Object.entries(breakdownMap).map(([owners, data]) => ({
+      owners: parseInt(owners, 10),
+      totalArea: parseFloat(data.totalArea.toFixed(2)),
+      count: data.count,
+    })).sort((a, b) => a.owners - b.owners);
+  }, [apartments]);
+
   return (
     <div className="relative min-h-screen pb-16 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
       
@@ -166,6 +189,9 @@ export const MainPage: React.FC = () => {
           <>
             {/* Stats Dashboard Grid */}
             <StatsGrid metrics={metrics} />
+
+            {/* Owners Area Breakdown Panel */}
+            <OwnersAreaBreakdown breakdown={ownersAreaBreakdown} totalArea={metrics.totalArea} />
 
             {/* Filter Control Bar */}
             <ApartmentFilter
