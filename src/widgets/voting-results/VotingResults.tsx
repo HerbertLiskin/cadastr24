@@ -17,6 +17,25 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
   const paperFull = [22, 42, 68];
   const cityFull = [1, 5, 52];
 
+  const nonVotingNums = useMemo(() => {
+    const allVotedNums = new Set([
+      ...elecFull,
+      ...paperFull,
+      ...cityFull,
+      67, 80, 49,
+      17, 2, 43, 61
+    ]);
+
+    const nonVoting: number[] = [];
+    for (let i = 1; i <= 80; i++) {
+      if (i === 41) continue; // Skip KB Store
+      if (!allVotedNums.has(i)) {
+        nonVoting.push(i);
+      }
+    }
+    return nonVoting;
+  }, [apartments]);
+
   const votingStats = useMemo(() => {
     if (apartments.length === 0) {
       return {
@@ -260,6 +279,24 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
                   key={n}
                   onClick={() => navigate(`/apartment/${n}`)}
                   className="px-2.5 py-0.5 text-xs bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none"
+                >
+                  Кв. {n}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Non-Voting List */}
+          <div className="flex flex-col sm:flex-row sm:items-start gap-2.5 border-t border-slate-800/40 pt-4.5 mt-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-red-400 font-display w-36 shrink-0 mt-1">
+              Не голосовали ({nonVotingNums.length} кв.):
+            </span>
+            <div className="flex flex-wrap gap-1.5">
+              {nonVotingNums.map(n => (
+                <button
+                  key={n}
+                  onClick={() => navigate(`/apartment/${n}`)}
+                  className="px-2.5 py-0.5 text-xs bg-red-500/10 hover:bg-red-500/20 text-red-300 border border-red-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none"
                 >
                   Кв. {n}
                 </button>
