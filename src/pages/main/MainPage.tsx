@@ -3,6 +3,7 @@ import { Landmark, Sparkles, AlertCircle } from 'lucide-react';
 import { useApartments } from '../../entities/apartment/model/useApartments';
 import { StatsGrid } from '../../widgets/stats-grid/StatsGrid';
 import { OwnersAreaBreakdown } from '../../widgets/stats-grid/OwnersAreaBreakdown';
+import { VotingResults } from '../../widgets/voting-results/VotingResults';
 import { ApartmentFilter } from '../../features/search-filter/ApartmentFilter';
 import { ApartmentTable } from '../../widgets/apartment-table/ApartmentTable';
 import type { ApartmentElement } from '../../entities/apartment/model/types';
@@ -187,6 +188,9 @@ export const MainPage: React.FC = () => {
           </div>
         ) : (
           <>
+            {/* Voting Results Widget */}
+            <VotingResults apartments={apartments} totalArea={metrics.totalArea} />
+
             {/* Stats Dashboard Grid */}
             <StatsGrid metrics={metrics} />
 
