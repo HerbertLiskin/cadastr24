@@ -12,11 +12,31 @@ interface VotingResultsProps {
 export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalArea }) => {
   const navigate = useNavigate();
 
-  // Defined voting lists
-  const elecFull = [20, 16, 4, 39, 27, 24, 21, 60, 55, 53, 48, 47, 78, 77, 76, 74, 73, 65, 62, 10];
-  const paperFull = [22, 42, 68];
+  const elecFull = [4, 10, 16, 20, 21, 24, 27, 39, 47, 48, 53, 54, 55, 56, 58, 60, 62, 65, 73, 74, 76, 77, 78];
+  const paperFull = [2, 22, 30, 38, 42, 43, 45, 68];
   const cityFull = [1, 5];
-  const planningFull = [9, 11, 30, 38, 44, 50, 52, 54, 56, 58];
+  const planningFull = [9, 11, 44, 50, 52];
+  const refusedFull = [14, 18, 25, 29];
+
+  // Helper structures to display voters in order
+  const elecVoters = useMemo(() => {
+    const list = [
+      ...elecFull.map(n => ({ n, label: `Кв. ${n}`, isFractional: false })),
+      { n: 67, label: 'Кв. 67 (1/2)', isFractional: true },
+      { n: 80, label: 'Кв. 80 (22м)', isFractional: true },
+      { n: 49, label: 'Кв. 49 (1/3)', isFractional: true }
+    ];
+    return list.sort((a, b) => a.n - b.n);
+  }, [elecFull]);
+
+  const paperVoters = useMemo(() => {
+    const list = [
+      ...paperFull.map(n => ({ n, label: `Кв. ${n}`, isFractional: false })),
+      { n: 17, label: 'Кв. 17 (15/49)', isFractional: true },
+      { n: 61, label: 'Кв. 61 (1/3)', isFractional: true }
+    ];
+    return list.sort((a, b) => a.n - b.n);
+  }, [paperFull]);
 
   const nonVotingNums = useMemo(() => {
     const allVotedNums = new Set([
@@ -24,8 +44,9 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
       ...paperFull,
       ...cityFull,
       67, 80, 49,
-      17, 2, 43, 61,
-      ...planningFull
+      17, 61,
+      ...planningFull,
+      ...refusedFull
     ]);
 
     const nonVoting: number[] = [];
@@ -75,8 +96,6 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
     });
     // Custom shares
     if (apartments[17 - 1]) paperSum += parseFloat(apartments[17 - 1].area || '0') * (15 / 49);
-    if (apartments[2 - 1]) paperSum += parseFloat(apartments[2 - 1].area || '0') * (3 / 8);
-    if (apartments[43 - 1]) paperSum += parseFloat(apartments[43 - 1].area || '0') * (15 / 35);
     if (apartments[61 - 1]) paperSum += parseFloat(apartments[61 - 1].area || '0') * (1/3);
 
     // 3. City Ownership Sum
@@ -169,7 +188,7 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
             </span>
             <div className="flex items-center justify-between mt-1 text-xs">
               <span className="text-indigo-400 font-semibold">{votingStats.elecPercent}% от дома</span>
-              <span className="text-slate-500">{elecFull.length + 3} кв.</span>
+              <span className="text-slate-500">{elecVoters.length} кв.</span>
             </div>
           </div>
         </div>
@@ -186,7 +205,7 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
             </span>
             <div className="flex items-center justify-between mt-1 text-xs">
               <span className="text-violet-400 font-semibold">{votingStats.paperPercent}% от дома</span>
-              <span className="text-slate-500">{paperFull.length + 4} кв.</span>
+              <span className="text-slate-500">{paperVoters.length} кв.</span>
             </div>
           </div>
         </div>
@@ -220,7 +239,7 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
             </span>
             <div className="flex items-center justify-between mt-1 text-xs">
               <span className="text-indigo-300 font-bold">{votingStats.totalPercent}% от дома</span>
-              <span className="text-slate-400 font-semibold">{elecFull.length + paperFull.length + 7} кв.</span>
+              <span className="text-slate-400 font-semibold">{elecVoters.length + paperVoters.length} кв.</span>
             </div>
           </div>
         </div>
@@ -237,7 +256,7 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
             </span>
             <div className="flex items-center justify-between mt-1 text-xs">
               <span className="text-orange-300 font-bold">{votingStats.projectedPercent}% от дома</span>
-              <span className="text-slate-400 font-semibold">{elecFull.length + paperFull.length + 7 + planningFull.length} кв.</span>
+              <span className="text-slate-400 font-semibold">{elecVoters.length + paperVoters.length + planningFull.length} кв.</span>
             </div>
           </div>
         </div>
@@ -255,57 +274,36 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
           {/* Electronic Voters List */}
           <div className="flex flex-col sm:flex-row sm:items-start gap-2.5">
             <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-400 font-display w-36 shrink-0 mt-1">
-              Электронно ({elecFull.length + 3} кв.):
+              Электронно ({elecVoters.length} кв.):
             </span>
             <div className="flex flex-wrap gap-1.5">
-              {elecFull.map(n => (
+              {elecVoters.map(v => (
                 <button
-                  key={n}
-                  onClick={() => navigate(`/apartment/${n}`)}
+                  key={v.n}
+                  onClick={() => navigate(`/apartment/${v.n}`)}
                   className="px-2.5 py-0.5 text-xs bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none"
                 >
-                  Кв. {n}
+                  {v.label}
                 </button>
               ))}
-              <button onClick={() => navigate('/apartment/67')} className="px-2.5 py-0.5 text-xs bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none">
-                Кв. 67 <span className="text-[10px] opacity-70">(1/2)</span>
-              </button>
-              <button onClick={() => navigate('/apartment/80')} className="px-2.5 py-0.5 text-xs bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none">
-                Кв. 80 <span className="text-[10px] opacity-70">(22м)</span>
-              </button>
-              <button onClick={() => navigate('/apartment/49')} className="px-2.5 py-0.5 text-xs bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none">
-                Кв. 49 <span className="text-[10px] opacity-70">(1/3)</span>
-              </button>
             </div>
           </div>
 
           {/* Paper Voters List */}
           <div className="flex flex-col sm:flex-row sm:items-start gap-2.5">
             <span className="text-[10px] font-bold uppercase tracking-wider text-violet-400 font-display w-36 shrink-0 mt-1">
-              Бумажные бл. ({paperFull.length + 4} кв.):
+              Бумажные бл. ({paperVoters.length} кв.):
             </span>
             <div className="flex flex-wrap gap-1.5">
-              <button onClick={() => navigate('/apartment/17')} className="px-2.5 py-0.5 text-xs bg-violet-500/10 hover:bg-violet-500/20 text-violet-300 border border-violet-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none">
-                Кв. 17 <span className="text-[10px] opacity-70">(15/49)</span>
-              </button>
-              <button onClick={() => navigate('/apartment/2')} className="px-2.5 py-0.5 text-xs bg-violet-500/10 hover:bg-violet-500/20 text-violet-300 border border-violet-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none">
-                Кв. 2 <span className="text-[10px] opacity-70">(3/8)</span>
-              </button>
-              {paperFull.map(n => (
+              {paperVoters.map(v => (
                 <button
-                  key={n}
-                  onClick={() => navigate(`/apartment/${n}`)}
+                  key={v.n}
+                  onClick={() => navigate(`/apartment/${v.n}`)}
                   className="px-2.5 py-0.5 text-xs bg-violet-500/10 hover:bg-violet-500/20 text-violet-300 border border-violet-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none"
                 >
-                  Кв. {n}
+                  {v.label}
                 </button>
               ))}
-              <button onClick={() => navigate('/apartment/43')} className="px-2.5 py-0.5 text-xs bg-violet-500/10 hover:bg-violet-500/20 text-violet-300 border border-violet-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none">
-                Кв. 43 <span className="text-[10px] opacity-70">(15/35)</span>
-              </button>
-              <button onClick={() => navigate('/apartment/61')} className="px-2.5 py-0.5 text-xs bg-violet-500/10 hover:bg-violet-500/20 text-violet-300 border border-violet-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none">
-                Кв. 61 <span className="text-[10px] opacity-70">(1/3)</span>
-              </button>
             </div>
           </div>
 
@@ -338,6 +336,24 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
                   key={n}
                   onClick={() => navigate(`/apartment/${n}`)}
                   className="px-2.5 py-0.5 text-xs bg-orange-500/10 hover:bg-orange-500/20 text-orange-300 border border-orange-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none"
+                >
+                  Кв. {n}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Refused to Vote List */}
+          <div className="flex flex-col sm:flex-row sm:items-start gap-2.5 border-t border-slate-800/40 pt-4.5 mt-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 font-display w-36 shrink-0 mt-1">
+              Не будут голосовать ({refusedFull.length} кв.):
+            </span>
+            <div className="flex flex-wrap gap-1.5">
+              {refusedFull.map(n => (
+                <button
+                  key={n}
+                  onClick={() => navigate(`/apartment/${n}`)}
+                  className="px-2.5 py-0.5 text-xs bg-slate-500/10 hover:bg-slate-500/20 text-slate-300 border border-slate-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none"
                 >
                   Кв. {n}
                 </button>
