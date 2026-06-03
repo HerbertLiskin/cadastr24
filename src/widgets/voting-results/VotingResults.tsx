@@ -12,11 +12,11 @@ interface VotingResultsProps {
 export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalArea }) => {
   const navigate = useNavigate();
 
-  const elecFull = [4, 10, 11, 16, 20, 21, 24, 27, 36, 39, 47, 48, 53, 54, 55, 56, 58, 60, 62, 65, 73, 74, 75, 76, 77, 78];
-  const paperFull = [2, 22, 30, 38, 42, 43, 45, 63, 68];
+  const elecFull = [4, 10, 11, 16, 20, 21, 24, 36, 39, 48, 53, 54, 55, 56, 58, 60, 62, 65, 73, 74, 76, 77, 78];
+  const paperFull = [2, 17, 22, 27, 30, 38, 42, 43, 47, 52, 63, 68, 75];
   const cityFull = [1, 5];
   const planningFull = [9, 44, 50];
-  const refusedFull = [14, 18, 25, 29, 52, 59];
+  const refusedFull = [14, 18, 25, 29, 59];
 
   // Helper structures to display voters in order
   const elecVoters = useMemo(() => {
@@ -32,8 +32,7 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
   const paperVoters = useMemo(() => {
     const list = [
       ...paperFull.map(n => ({ n, label: `Кв. ${n}`, isFractional: false })),
-      { n: 17, label: 'Кв. 17 (15/49)', isFractional: true },
-      { n: 61, label: 'Кв. 61 (1/3)', isFractional: true }
+      { n: 61, label: 'Кв. 61 (1/2)', isFractional: true }
     ];
     return list.sort((a, b) => a.n - b.n);
   }, [paperFull]);
@@ -44,7 +43,7 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
       ...paperFull,
       ...cityFull,
       67, 80, 49,
-      17, 61,
+      61,
       ...planningFull,
       ...refusedFull
     ]);
@@ -95,8 +94,7 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
       if (apt) paperSum += parseFloat(apt.area || '0');
     });
     // Custom shares
-    if (apartments[17 - 1]) paperSum += parseFloat(apartments[17 - 1].area || '0') * (15 / 49);
-    if (apartments[61 - 1]) paperSum += parseFloat(apartments[61 - 1].area || '0') * (1/3);
+    if (apartments[61 - 1]) paperSum += parseFloat(apartments[61 - 1].area || '0') * 0.5;
 
     // 3. City Ownership Sum
     let citySum = 0;
