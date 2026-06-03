@@ -12,11 +12,11 @@ interface VotingResultsProps {
 export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalArea }) => {
   const navigate = useNavigate();
 
-  const elecFull = [4, 10, 16, 20, 21, 24, 27, 39, 47, 48, 53, 54, 55, 56, 58, 60, 62, 65, 73, 74, 76, 77, 78];
-  const paperFull = [2, 22, 30, 38, 42, 43, 45, 68];
+  const elecFull = [4, 10, 11, 16, 20, 21, 24, 27, 36, 39, 47, 48, 53, 54, 55, 56, 58, 60, 62, 65, 73, 74, 75, 76, 77, 78];
+  const paperFull = [2, 22, 30, 38, 42, 43, 45, 63, 68];
   const cityFull = [1, 5];
-  const planningFull = [9, 11, 44, 50, 52];
-  const refusedFull = [14, 18, 25, 29];
+  const planningFull = [9, 44, 50];
+  const refusedFull = [14, 18, 25, 29, 52, 59];
 
   // Helper structures to display voters in order
   const elecVoters = useMemo(() => {
