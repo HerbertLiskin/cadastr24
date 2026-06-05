@@ -13,7 +13,7 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
   const navigate = useNavigate();
 
   const elecFull = [4, 10, 11, 16, 20, 21, 24, 36, 39, 48, 53, 54, 55, 56, 58, 60, 62, 65, 73, 74, 76, 77, 78];
-  const paperFull = [2, 17, 22, 27, 30, 38, 42, 43, 47, 52, 63, 68, 75];
+  const paperFull = [2, 17, 22, 27, 28, 30, 38, 42, 43, 47, 52, 63, 68, 75];
   const cityFull = [1, 5];
   const planningFull = [9, 44, 50];
   const refusedFull = [14, 18, 25, 29, 59];
