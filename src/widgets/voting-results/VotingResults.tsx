@@ -13,10 +13,10 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
   const navigate = useNavigate();
 
   const elecFull = [4, 10, 11, 16, 20, 21, 24, 36, 39, 48, 53, 54, 55, 56, 58, 60, 62, 65, 73, 74, 76, 77, 78];
-  const paperFull = [2, 17, 22, 27, 28, 30, 38, 42, 43, 47, 52, 63, 68, 75];
+  const paperFull = [2, 17, 22, 27, 28, 30, 38, 42, 43, 45, 47, 50, 52, 63, 68, 75];
   const cityFull = [1, 5];
-  const planningFull = [9, 44, 50];
-  const refusedFull = [14, 18, 25, 29, 59];
+  const planningFull: number[] = [];
+  const refusedFull = [9, 14, 18, 25, 29, 41, 44, 59];
 
   // Helper structures to display voters in order
   const elecVoters = useMemo(() => {
@@ -324,22 +324,24 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
           </div>
 
           {/* Planning Voters List */}
-          <div className="flex flex-col sm:flex-row sm:items-start gap-2.5 border-t border-slate-800/40 pt-4.5 mt-2">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-orange-400 font-display w-36 shrink-0 mt-1">
-              Планируют ({planningFull.length} кв.):
-            </span>
-            <div className="flex flex-wrap gap-1.5">
-              {planningFull.map(n => (
-                <button
-                  key={n}
-                  onClick={() => navigate(`/apartment/${n}`)}
-                  className="px-2.5 py-0.5 text-xs bg-orange-500/10 hover:bg-orange-500/20 text-orange-300 border border-orange-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none"
-                >
-                  Кв. {n}
-                </button>
-              ))}
+          {planningFull.length > 0 && (
+            <div className="flex flex-col sm:flex-row sm:items-start gap-2.5 border-t border-slate-800/40 pt-4.5 mt-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-orange-400 font-display w-36 shrink-0 mt-1">
+                Планируют ({planningFull.length} кв.):
+              </span>
+              <div className="flex flex-wrap gap-1.5">
+                {planningFull.map(n => (
+                  <button
+                    key={n}
+                    onClick={() => navigate(`/apartment/${n}`)}
+                    className="px-2.5 py-0.5 text-xs bg-orange-500/10 hover:bg-orange-500/20 text-orange-300 border border-orange-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none"
+                  >
+                    Кв. {n}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Refused to Vote List */}
           <div className="flex flex-col sm:flex-row sm:items-start gap-2.5 border-t border-slate-800/40 pt-4.5 mt-2">
