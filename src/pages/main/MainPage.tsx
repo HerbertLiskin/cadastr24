@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { Landmark, Sparkles, AlertCircle } from 'lucide-react';
 import { useApartments } from '../../entities/apartment/model/useApartments';
 import { StatsGrid } from '../../widgets/stats-grid/StatsGrid';
@@ -160,15 +161,28 @@ export const MainPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Live Indicator */}
-        <div className="flex items-center gap-2 bg-slate-950/45 px-4 py-2 rounded-2xl border border-slate-800/80 shadow-inner">
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-          </span>
-          <span className="text-xs text-slate-400 font-bold font-display uppercase tracking-wider">
-            База актуальна
-          </span>
+        <div className="flex items-center gap-3">
+          {/* Link to Mismatches Analysis Page */}
+          <Link
+            to="/mismatches"
+            className="flex items-center gap-2 bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 px-4 py-2.5 rounded-2xl border border-rose-500/20 shadow-lg shadow-rose-500/5 transition-all duration-150 cursor-pointer"
+          >
+            <AlertCircle size={15} className="animate-pulse" />
+            <span className="text-xs font-bold font-display uppercase tracking-wider">
+              Расхождения протокола
+            </span>
+          </Link>
+
+          {/* Live Indicator */}
+          <div className="flex items-center gap-2 bg-slate-950/45 px-4 py-2.5 rounded-2xl border border-slate-800/80 shadow-inner">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            </span>
+            <span className="text-xs text-slate-400 font-bold font-display uppercase tracking-wider">
+              База актуальна
+            </span>
+          </div>
         </div>
       </header>
 

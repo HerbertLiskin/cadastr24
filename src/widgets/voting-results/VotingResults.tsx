@@ -4,6 +4,14 @@ import { Vote, FileSpreadsheet, Keyboard, Landmark, CheckCircle, AlertTriangle, 
 import { GlassCard } from '../../shared/ui/GlassCard';
 import type { ApartmentElement } from '../../entities/apartment/model/types';
 
+import {
+  elecFull,
+  paperFull,
+  cityFull,
+  planningFull,
+  refusedFull
+} from '../../entities/apartment/model/votingConfig';
+
 interface VotingResultsProps {
   apartments: ApartmentElement[];
   totalArea: number;
@@ -11,12 +19,6 @@ interface VotingResultsProps {
 
 export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalArea }) => {
   const navigate = useNavigate();
-
-  const elecFull = [4, 10, 11, 16, 20, 21, 24, 36, 39, 48, 53, 54, 55, 56, 58, 60, 62, 65, 73, 74, 75, 76, 77, 78];
-  const paperFull = [2, 17, 22, 27, 28, 30, 38, 42, 43, 45, 47, 50, 52, 59, 63, 68];
-  const cityFull = [1, 5];
-  const planningFull: number[] = [];
-  const refusedFull = [9, 14, 18, 25, 29, 41, 44];
 
   // Helper structures to display voters in order
   const elecVoters = useMemo(() => {
