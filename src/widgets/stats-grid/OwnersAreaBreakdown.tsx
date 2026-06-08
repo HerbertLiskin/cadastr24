@@ -23,7 +23,7 @@ export const OwnersAreaBreakdown: React.FC<OwnersAreaBreakdownProps> = ({ breakd
           </h3>
         </div>
         <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider font-display">
-          Суммарная площадь жилого фонда: {totalArea.toLocaleString('ru-RU')} м²
+          Общая площадь всех помещений (с КБ): {totalArea.toLocaleString('ru-RU')} м²
         </span>
       </div>
 

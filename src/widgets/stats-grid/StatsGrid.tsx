@@ -35,7 +35,7 @@ export const StatsGrid: React.FC<StatsGridProps> = ({ metrics }) => {
     {
       title: 'Общая площадь',
       value: `${metrics.totalArea.toLocaleString('ru-RU')} м²`,
-      subtext: `Средняя: ${metrics.averageArea} м²`,
+      subtext: `Вкл. нежилое КБ (74.8 м²) | Средняя: ${metrics.averageArea} м²`,
       icon: <Grid className="text-violet-400" size={24} />,
       glow: 'violet' as const,
     },

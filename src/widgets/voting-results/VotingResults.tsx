@@ -346,22 +346,24 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
           )}
 
           {/* Refused to Vote List */}
-          <div className="flex flex-col sm:flex-row sm:items-start gap-2.5 border-t border-slate-800/40 pt-4.5 mt-2">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 font-display w-36 shrink-0 mt-1">
-              Не будут голосовать ({refusedFull.length} кв.):
-            </span>
-            <div className="flex flex-wrap gap-1.5">
-              {refusedFull.map(n => (
-                <button
-                  key={n}
-                  onClick={() => navigate(`/apartment/${n}`)}
-                  className="px-2.5 py-0.5 text-xs bg-slate-500/10 hover:bg-slate-500/20 text-slate-300 border border-slate-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none"
-                >
-                  Кв. {n}
-                </button>
-              ))}
+          {refusedFull.length > 0 && (
+            <div className="flex flex-col sm:flex-row sm:items-start gap-2.5 border-t border-slate-800/40 pt-4.5 mt-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 font-display w-36 shrink-0 mt-1">
+                Не будут голосовать ({refusedFull.length} кв.):
+              </span>
+              <div className="flex flex-wrap gap-1.5">
+                {refusedFull.map(n => (
+                  <button
+                    key={n}
+                    onClick={() => navigate(`/apartment/${n}`)}
+                    className="px-2.5 py-0.5 text-xs bg-slate-500/10 hover:bg-slate-500/20 text-slate-300 border border-slate-500/20 rounded-md cursor-pointer transition-all hover:scale-[1.05] focus:outline-none"
+                  >
+                    Кв. {n}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Non-Voting List */}
           <div className="flex flex-col sm:flex-row sm:items-start gap-2.5 border-t border-slate-800/40 pt-4.5 mt-2">

@@ -52,6 +52,9 @@ export const useApartments = () => {
     const averageArea = totalValid > 0 ? totalArea / totalValid : 0;
     const averageCost = totalValid > 0 ? totalCost / totalValid : 0;
 
+    // Add commercial area of Flat 41 (KB store = 74.8 sq.m)
+    totalArea += 74.8;
+
     return {
       totalSlots: apartments.length,
       totalValid,
