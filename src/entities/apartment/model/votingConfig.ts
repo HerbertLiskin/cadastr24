@@ -1,4 +1,4 @@
-export const elecFull = [4, 9, 10, 11, 14, 16, 20, 21, 24, 27, 36, 39, 48, 53, 54, 55, 56, 58, 60, 62, 65, 73, 74, 75, 76, 77, 78];
+export const elecFull = [4, 9, 10, 11, 14, 16, 20, 21, 27, 36, 39, 48, 53, 54, 55, 56, 58, 60, 62, 65, 73, 74, 75, 76, 77, 78];
 export const paperFull = [2, 17, 22, 28, 30, 38, 42, 43, 45, 47, 50, 52, 59, 63, 68];
 export const cityFull = [1, 5];
 export const planningFull: number[] = [];
