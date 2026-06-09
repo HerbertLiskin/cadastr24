@@ -24,7 +24,6 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
   const elecVoters = useMemo(() => {
     const list = [
       ...elecFull.map(n => ({ n, label: `Кв. ${n}`, isFractional: false })),
-      { n: 67, label: 'Кв. 67 (1/2)', isFractional: true },
       { n: 80, label: 'Кв. 80 (22м)', isFractional: true },
       { n: 49, label: 'Кв. 49 (1/3)', isFractional: true }
     ];
@@ -44,7 +43,7 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
       ...elecFull,
       ...paperFull,
       ...cityFull,
-      67, 80, 49,
+      80, 49,
       61,
       ...planningFull,
       ...refusedFull
@@ -85,7 +84,6 @@ export const VotingResults: React.FC<VotingResultsProps> = ({ apartments, totalA
       if (apt) elecSum += parseFloat(apt.area || '0');
     });
     // Custom shares
-    if (apartments[67 - 1]) elecSum += parseFloat(apartments[67 - 1].area || '0') * 0.5;
     elecSum += 22.00; // Flat 80 share is 22m
     if (apartments[49 - 1]) elecSum += parseFloat(apartments[49 - 1].area || '0') * (1/3);
 
